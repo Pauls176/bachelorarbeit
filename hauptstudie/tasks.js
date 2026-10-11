@@ -27,7 +27,7 @@ const taskGroups = [
 
         prompt:
             "Betrachten Sie die folgenden Informationen zu einem " +
-            "Speed-Dating-Paar. Haben die beiden Personen " +
+            "Speed-Dating-Paar. Haben beide Personen " +
             "sich für ein zweites Date entschieden?",
 
         // erste Chatnachricht
@@ -35,8 +35,8 @@ const taskGroups = [
             "Was glauben Sie? Wird dieses Paar ein zweites Date haben?",
 
         options: [
-            "Ja, zum zweiten Date",
-            "Nein, kein zweites Date"
+            "Nein, kein zweites Date",
+            "Ja, zum zweiten Date"
         ],
 
         variants: [
