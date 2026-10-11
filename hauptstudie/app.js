@@ -313,9 +313,9 @@ if (!isFreshSession) {
     saveProgress();
 }
 
-// 6 Blocks: 5 Aufgabentypen + 1 Bewertungsblock
+// 5 Aufgabenblöcke
 
-const totalBlocks = taskGroups.length + 1;
+const totalTaskBlocks = taskGroups.length;
 
 /* Bewertungsblock */
 
@@ -386,7 +386,7 @@ function showGroupIntro(task) {
     document.getElementById(
         "task-counter"
     ).textContent =
-        `Block ${task.groupOrder} von ${totalBlocks}`;
+        `Block ${task.groupOrder} von ${totalTaskBlocks}`;
 
     document.getElementById(
         "group-intro-title"
@@ -659,7 +659,7 @@ function renderTask() {
     document.getElementById(
         "task-counter"
     ).textContent =
-        `Block ${task.groupOrder} von ${totalBlocks}`;
+        `Block ${task.groupOrder} von ${totalTaskBlocks}`;
 
     /* Titel */
 
@@ -1153,7 +1153,7 @@ function startRatingBlock() {
     document.getElementById(
         "task-counter"
     ).textContent =
-        `Block ${totalBlocks} von ${totalBlocks}`;
+       "Mensch und KI";
 
     document.getElementById(
         "group-intro-title"
@@ -1191,7 +1191,7 @@ function showRatingScreen() {
     document.getElementById(
         "task-counter"
     ).textContent =
-        `Block ${totalBlocks} von ${totalBlocks}`;
+        "Mensch und KI";
 
     document.getElementById(
         "rating-title"
